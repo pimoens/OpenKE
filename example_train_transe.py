@@ -7,7 +7,7 @@ os.environ['CUDA_VISIBLE_DEVICES']='7'
 #Input training files from benchmarks/FB15K/ folder.
 con = config.Config()
 #True: Input test files from the same folder.
-con.set_in_path("./benchmarks/FB15K/")
+con.set_in_path("./benchmarks/DASHB/")
 con.set_test_link_prediction(True)
 con.set_test_triple_classification(True)
 con.set_work_threads(8)
