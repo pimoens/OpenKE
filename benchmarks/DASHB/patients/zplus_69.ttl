@@ -1,0 +1,216 @@
+@prefix ns1: <https://dynamicdashboard.ilabt.imec.be/broker/ontologies/dashboard#> .
+@prefix ns2: <http://dynamicdashboard.ilabt.imec.be/broker/ontologies/ssn-extension/> .
+@prefix ns3: <http://dynamicdashboard.ilabt.imec.be/broker/ontologies/dashboard#> .
+@prefix ns4: <https://dahcc.idlab.ugent.be/Ontology/MonitoredPerson/> .
+@prefix ns5: <https://saref.etsi.org/core/> .
+@prefix ns6: <https://saref.etsi.org/saref4ehaw/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns4:Asthma a ns4:ChronicDisease ;
+    ns1:influences <https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/org.dyamand.types.health.SpO2> .
+
+ns4:BloodPressureFluctuations a ns4:ChronicDisease ;
+    ns1:influences <https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/org.dyamand.types.health.DiastolicBloodPressure>,
+        <https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/org.dyamand.types.health.SystolicBloodPressure> .
+
+ns4:BloodPressureIssues a ns4:ChronicDisease ;
+    ns1:influences <https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/org.dyamand.types.health.DiastolicBloodPressure>,
+        <https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/org.dyamand.types.health.SystolicBloodPressure> .
+
+ns4:CardiacArrhythmia a ns4:ChronicDisease ;
+    ns1:influences <https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/org.dyamand.types.health.HeartRate> .
+
+ns4:ChronicObstructivePulmonaryDisease a ns4:ChronicDisease ;
+    ns1:influences <https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/org.dyamand.types.health.SpO2> .
+
+ns4:CytokineReleaseSyndrome a ns4:ChronicDisease ;
+    ns1:influences <https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/org.dyamand.types.health.BodyTemperature>,
+        <https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/org.dyamand.types.health.DiastolicBloodPressure>,
+        <https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/org.dyamand.types.health.HeartRate>,
+        <https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/org.dyamand.types.health.SystolicBloodPressure> .
+
+ns4:Diabetes a ns4:ChronicDisease ;
+    ns1:influences <https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/org.dyamand.types.health.GlucoseLevel> .
+
+ns4:HighBloodPressure a ns4:ChronicDisease ;
+    ns1:influences <https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/org.dyamand.types.health.DiastolicBloodPressure>,
+        <https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/org.dyamand.types.health.SystolicBloodPressure> .
+
+ns4:HypoHyperGlycemia a ns4:ChronicDisease ;
+    ns1:influences <https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/org.dyamand.types.health.GlucoseLevel> .
+
+ns4:Hypoglycemia a ns4:ChronicDisease ;
+    ns1:influences <https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/org.dyamand.types.health.GlucoseLevel> .
+
+ns4:LowBloodPressure a ns4:ChronicDisease ;
+    ns1:influences <https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/org.dyamand.types.health.DiastolicBloodPressure>,
+        <https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/org.dyamand.types.health.SystolicBloodPressure> .
+
+ns4:Pneumothorax a ns4:ChronicDisease ;
+    ns1:influences <https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/org.dyamand.types.health.SpO2> .
+
+<https://webthing.protego.dynamicdashboard.ilabt.imec.be/things/zplus_69.00%253A1C%253A05%253AFE%253A44%253A6B%252Fservice0029> a sosa:Sensor,
+        ns5:Sensor ;
+    rdfs:label "SpO2 (00:1C:05:FE:44:6B/service0029)" ;
+    ns3:hasId "00:1C:05:FE:44:6B/service0029" ;
+    ns2:subSystemOf <http://example.com/tx/patients/zplus_69> ;
+    sosa:observes <https://webthing.protego.dynamicdashboard.ilabt.imec.be/things/zplus_69.00%253A1C%253A05%253AFE%253A44%253A6B%252Fservice0029/properties/org.dyamand.types.health.SpO2> ;
+    ns5:hasProperty <https://webthing.protego.dynamicdashboard.ilabt.imec.be/things/zplus_69.00%253A1C%253A05%253AFE%253A44%253A6B%252Fservice0029/properties/org.dyamand.types.health.SpO2> .
+
+<https://webthing.protego.dynamicdashboard.ilabt.imec.be/things/zplus_69.00%253A1C%253A05%253AFF%253AA9%253A4E%252Fservice0029> a sosa:Sensor,
+        ns5:Sensor ;
+    rdfs:label "SpO2 (00:1C:05:FF:A9:4E/service0029)" ;
+    ns3:hasId "00:1C:05:FF:A9:4E/service0029" ;
+    ns2:subSystemOf <http://example.com/tx/patients/zplus_69> ;
+    sosa:observes <https://webthing.protego.dynamicdashboard.ilabt.imec.be/things/zplus_69.00%253A1C%253A05%253AFF%253AA9%253A4E%252Fservice0029/properties/org.dyamand.types.health.SpO2> ;
+    ns5:hasProperty <https://webthing.protego.dynamicdashboard.ilabt.imec.be/things/zplus_69.00%253A1C%253A05%253AFF%253AA9%253A4E%252Fservice0029/properties/org.dyamand.types.health.SpO2> .
+
+<https://webthing.protego.dynamicdashboard.ilabt.imec.be/things/zplus_69.00%253A9D%253A6B%253A89%253A43%253ACD%252Fservice0025> a sosa:Sensor,
+        ns5:Sensor ;
+    rdfs:label "BloodPressure (00:9D:6B:89:43:CD/service0025)" ;
+    ns3:hasId "00:9D:6B:89:43:CD/service0025" ;
+    ns2:subSystemOf <http://example.com/tx/patients/zplus_69> ;
+    sosa:observes <https://webthing.protego.dynamicdashboard.ilabt.imec.be/things/zplus_69.00%253A9D%253A6B%253A89%253A43%253ACD%252Fservice0025/properties/org.dyamand.types.health.DiastolicBloodPressure>,
+        <https://webthing.protego.dynamicdashboard.ilabt.imec.be/things/zplus_69.00%253A9D%253A6B%253A89%253A43%253ACD%252Fservice0025/properties/org.dyamand.types.health.HeartRate>,
+        <https://webthing.protego.dynamicdashboard.ilabt.imec.be/things/zplus_69.00%253A9D%253A6B%253A89%253A43%253ACD%252Fservice0025/properties/org.dyamand.types.health.SystolicBloodPressure> ;
+    ns5:hasProperty <https://webthing.protego.dynamicdashboard.ilabt.imec.be/things/zplus_69.00%253A9D%253A6B%253A89%253A43%253ACD%252Fservice0025/properties/org.dyamand.types.health.DiastolicBloodPressure>,
+        <https://webthing.protego.dynamicdashboard.ilabt.imec.be/things/zplus_69.00%253A9D%253A6B%253A89%253A43%253ACD%252Fservice0025/properties/org.dyamand.types.health.SystolicBloodPressure> ;
+    ns5:observes <https://webthing.protego.dynamicdashboard.ilabt.imec.be/things/zplus_69.00%253A9D%253A6B%253A89%253A43%253ACD%252Fservice0025/properties/org.dyamand.types.health.HeartRate> .
+
+<https://webthing.protego.dynamicdashboard.ilabt.imec.be/things/zplus_69.60%253A77%253A71%253A7D%253A93%253AD7%252Fservice0009> a sosa:Sensor,
+        ns5:Sensor ;
+    rdfs:label "GlucoseLevel (60:77:71:7D:93:D7/service0009)" ;
+    ns3:hasId "60:77:71:7D:93:D7/service0009" ;
+    ns2:subSystemOf <http://example.com/tx/patients/zplus_69> ;
+    sosa:observes <https://webthing.protego.dynamicdashboard.ilabt.imec.be/things/zplus_69.60%253A77%253A71%253A7D%253A93%253AD7%252Fservice0009/properties/org.dyamand.types.health.GlucoseLevel> ;
+    ns5:hasProperty <https://webthing.protego.dynamicdashboard.ilabt.imec.be/things/zplus_69.60%253A77%253A71%253A7D%253A93%253AD7%252Fservice0009/properties/org.dyamand.types.health.GlucoseLevel> .
+
+<https://webthing.protego.dynamicdashboard.ilabt.imec.be/things/zplus_69.B0%253A91%253A22%253AFB%253AD0%253A78%252Fservice0009> a sosa:Sensor,
+        ns5:Sensor ;
+    rdfs:label "GlucoseLevel (B0:91:22:FB:D0:78/service0009)" ;
+    ns3:hasId "B0:91:22:FB:D0:78/service0009" ;
+    ns2:subSystemOf <http://example.com/tx/patients/zplus_69> ;
+    sosa:observes <https://webthing.protego.dynamicdashboard.ilabt.imec.be/things/zplus_69.B0%253A91%253A22%253AFB%253AD0%253A78%252Fservice0009/properties/org.dyamand.types.health.GlucoseLevel> ;
+    ns5:hasProperty <https://webthing.protego.dynamicdashboard.ilabt.imec.be/things/zplus_69.B0%253A91%253A22%253AFB%253AD0%253A78%252Fservice0009/properties/org.dyamand.types.health.GlucoseLevel> .
+
+<https://webthing.protego.dynamicdashboard.ilabt.imec.be/things/zplus_69.F8%253A33%253A31%253A46%253A6E%253A0B%252Fservice0010> a sosa:Sensor,
+        ns5:Sensor ;
+    rdfs:label "BodyTemperature (F8:33:31:46:6E:0B/service0010)" ;
+    ns3:hasId "F8:33:31:46:6E:0B/service0010" ;
+    ns2:subSystemOf <http://example.com/tx/patients/zplus_69> ;
+    sosa:observes <https://webthing.protego.dynamicdashboard.ilabt.imec.be/things/zplus_69.F8%253A33%253A31%253A46%253A6E%253A0B%252Fservice0010/properties/org.dyamand.types.health.BodyTemperature> ;
+    ns5:hasProperty <https://webthing.protego.dynamicdashboard.ilabt.imec.be/things/zplus_69.F8%253A33%253A31%253A46%253A6E%253A0B%252Fservice0010/properties/org.dyamand.types.health.BodyTemperature> .
+
+<https://webthing.protego.dynamicdashboard.ilabt.imec.be/things/zplus_69.F8%253A33%253A31%253A46%253A7F.D0%252Fservice0010> a sosa:Sensor,
+        ns5:Sensor ;
+    rdfs:label "BodyTemperature (F8:33:31:46:7F.D0/service0010)" ;
+    ns3:hasId "F8:33:31:46:7F.D0/service0010" ;
+    ns2:subSystemOf <http://example.com/tx/patients/zplus_69> ;
+    sosa:observes <https://webthing.protego.dynamicdashboard.ilabt.imec.be/things/zplus_69.F8%253A33%253A31%253A46%253A7F.D0%252Fservice0010/properties/org.dyamand.types.health.BodyTemperature> ;
+    ns5:hasProperty <https://webthing.protego.dynamicdashboard.ilabt.imec.be/things/zplus_69.F8%253A33%253A31%253A46%253A7F.D0%252Fservice0010/properties/org.dyamand.types.health.BodyTemperature> .
+
+<https://webthing.protego.dynamicdashboard.ilabt.imec.be/things/zplus_69.lifestyle> a sosa:Sensor,
+        ns5:Sensor ;
+    rdfs:label "Lifestyle" ;
+    ns3:hasId "lifestyle" ;
+    ns2:subSystemOf <http://example.com/tx/patients/zplus_69> ;
+    sosa:observes <https://webthing.protego.dynamicdashboard.ilabt.imec.be/things/zplus_69.lifestyle/properties/enriched-call> ;
+    ns5:hasProperty <https://webthing.protego.dynamicdashboard.ilabt.imec.be/things/zplus_69.lifestyle/properties/enriched-call> .
+
+<https://webthing.protego.dynamicdashboard.ilabt.imec.be/things/zplus_69.00%253A1C%253A05%253AFE%253A44%253A6B%252Fservice0029/properties/org.dyamand.types.health.SpO2> a sosa:ObservableProperty,
+        <https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/org.dyamand.types.health.SpO2>,
+        ns5:Property ;
+    rdfs:label "SpO2" ;
+    ns3:hasId "org.dyamand.types.health.SpO2" ;
+    ns3:produces <http://dynamicdashboard.ilabt.imec.be/broker/ontologies/metrics#oxygenSaturation> .
+
+<https://webthing.protego.dynamicdashboard.ilabt.imec.be/things/zplus_69.00%253A1C%253A05%253AFF%253AA9%253A4E%252Fservice0029/properties/org.dyamand.types.health.SpO2> a sosa:ObservableProperty,
+        <https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/org.dyamand.types.health.SpO2>,
+        ns5:Property ;
+    rdfs:label "SpO2" ;
+    ns3:hasId "org.dyamand.types.health.SpO2" ;
+    ns3:produces <http://dynamicdashboard.ilabt.imec.be/broker/ontologies/metrics#oxygenSaturation> .
+
+<https://webthing.protego.dynamicdashboard.ilabt.imec.be/things/zplus_69.00%253A9D%253A6B%253A89%253A43%253ACD%252Fservice0025/properties/org.dyamand.types.health.DiastolicBloodPressure> a sosa:ObservableProperty,
+        <https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/org.dyamand.types.health.DiastolicBloodPressure>,
+        ns5:Property ;
+    rdfs:label "DiastolicBloodPressure" ;
+    ns3:hasid "org.dyamand.types.health.DiastolicBloodPressure" ;
+    ns3:produces <http://dynamicdashboard.ilabt.imec.be/broker/ontologies/metrics#diastolicBloodPressure> .
+
+<https://webthing.protego.dynamicdashboard.ilabt.imec.be/things/zplus_69.00%253A9D%253A6B%253A89%253A43%253ACD%252Fservice0025/properties/org.dyamand.types.health.HeartRate> a sosa:ObservableProperty,
+        <https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/org.dyamand.types.health.HeartRate>,
+        ns5:Property ;
+    rdfs:label "HeartRate" ;
+    ns3:hasId "org.dyamand.types.health.HeartRate" ;
+    ns3:produces <http://dynamicdashboard.ilabt.imec.be/broker/ontologies/metrics#heartRate> .
+
+<https://webthing.protego.dynamicdashboard.ilabt.imec.be/things/zplus_69.00%253A9D%253A6B%253A89%253A43%253ACD%252Fservice0025/properties/org.dyamand.types.health.SystolicBloodPressure> a sosa:ObservableProperty,
+        <https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/org.dyamand.types.health.SystolicBloodPressure>,
+        ns5:Property ;
+    rdfs:label "SystolicBloodPressure" ;
+    ns3:hasId "org.dyamand.types.health.SystolicBloodPressure" ;
+    ns3:produces <http://dynamicdashboard.ilabt.imec.be/broker/ontologies/metrics#systolicBloodPressure> .
+
+<https://webthing.protego.dynamicdashboard.ilabt.imec.be/things/zplus_69.60%253A77%253A71%253A7D%253A93%253AD7%252Fservice0009/properties/org.dyamand.types.health.GlucoseLevel> a sosa:ObservableProperty,
+        <https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/org.dyamand.types.health.GlucoseLevel>,
+        ns5:Property ;
+    rdfs:label "GlucoseLevel" ;
+    ns3:hasId "org.dyamand.types.health.GlucoseLevel" ;
+    ns3:produces <http://dynamicdashboard.ilabt.imec.be/broker/ontologies/metrics#glucoseLevel> .
+
+<https://webthing.protego.dynamicdashboard.ilabt.imec.be/things/zplus_69.B0%253A91%253A22%253AFB%253AD0%253A78%252Fservice0009/properties/org.dyamand.types.health.GlucoseLevel> a sosa:ObservableProperty,
+        <https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/org.dyamand.types.health.GlucoseLevel>,
+        ns5:Property ;
+    rdfs:label "GlucoseLevel" ;
+    ns3:hasId "org.dyamand.types.health.GlucoseLevel" ;
+    ns3:produces <http://dynamicdashboard.ilabt.imec.be/broker/ontologies/metrics#glucoseLevel> .
+
+<https://webthing.protego.dynamicdashboard.ilabt.imec.be/things/zplus_69.F8%253A33%253A31%253A46%253A6E%253A0B%252Fservice0010/properties/org.dyamand.types.health.BodyTemperature> a sosa:ObservableProperty,
+        <https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/org.dyamand.types.health.BodyTemperature>,
+        ns5:Property ;
+    rdfs:label "BodyTemperature" ;
+    ns3:hasId "org.dyamand.types.health.BodyTemperature" ;
+    ns3:produces <http://dynamicdashboard.ilabt.imec.be/broker/ontologies/metrics#celsiusTemperature> .
+
+<https://webthing.protego.dynamicdashboard.ilabt.imec.be/things/zplus_69.F8%253A33%253A31%253A46%253A7F.D0%252Fservice0010/properties/org.dyamand.types.health.BodyTemperature> a sosa:ObservableProperty,
+        <https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/org.dyamand.types.health.BodyTemperature>,
+        ns5:Property ;
+    rdfs:label "BodyTemperature" ;
+    ns3:hasId "org.dyamand.types.health.BodyTemperature" ;
+    ns3:produces <http://dynamicdashboard.ilabt.imec.be/broker/ontologies/metrics#celsiusTemperature> .
+
+<https://webthing.protego.dynamicdashboard.ilabt.imec.be/things/zplus_69.lifestyle/properties/enriched-call> a sosa:ObservableProperty,
+        ns5:Property ;
+    rdfs:label "EnrichedCall" ;
+    ns3:hasId "enriched-call" ;
+    ns3:produces <http://dynamicdashboard.ilabt.imec.be/broker/ontologies/metrics#json> .
+
+<https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/org.dyamand.types.health.BodyTemperature> a sosa:ObservableProperty,
+        ns5:Property .
+
+<https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/org.dyamand.types.health.HeartRate> a sosa:ObservableProperty,
+        ns5:Property .
+
+<https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/org.dyamand.types.health.GlucoseLevel> a sosa:ObservableProperty,
+        ns5:Property .
+
+<https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/org.dyamand.types.health.SpO2> a sosa:ObservableProperty,
+        ns5:Property .
+
+<https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/org.dyamand.types.health.DiastolicBloodPressure> a sosa:ObservableProperty,
+        ns5:Property .
+
+<https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/org.dyamand.types.health.SystolicBloodPressure> a sosa:ObservableProperty,
+        ns5:Property .
+
+<http://example.com/tx/patients/zplus_69> a ssn:System,
+        ns6:HealthActor ;
+    rdfs:label "zplus_69" ;
+    ns4:Sex "male" ;
+    ns4:livesIn <https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/homelab> ;
+    ns6:dob "1951-03-29T00:00:00"^^xsd:dateTime .
+
