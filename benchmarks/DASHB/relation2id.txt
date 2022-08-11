@@ -1,0 +1,18 @@
+17
+http://www.w3.org/ns/sosa/observes	0
+http://dynamicdashboard.ilabt.imec.be/broker/ontologies/dashboard#hasid	1
+http://dynamicdashboard.ilabt.imec.be/broker/ontologies/ssn-extension/subSystemOf	2
+https://dynamicdashboard.ilabt.imec.be/broker/ontologies/dashboard#influences	3
+https://dahcc.idlab.ugent.be/Ontology/MonitoredPerson/livesIn	4
+https://dahcc.idlab.ugent.be/Ontology/MonitoredPerson/hasAllergy	5
+https://dahcc.idlab.ugent.be/Ontology/MonitoredPerson/Sex	6
+https://saref.etsi.org/core/observes	7
+http://dynamicdashboard.ilabt.imec.be/broker/ontologies/dashboard#produces	8
+http://dynamicdashboard.ilabt.imec.be/broker/ontologies/dashboard#hasId	9
+https://saref.etsi.org/saref4ehaw/dob	10
+https://dahcc.idlab.ugent.be/Ontology/MonitoredPerson/hasAddiction	11
+http://www.w3.org/2000/01/rdf-schema#label	12
+https://dahcc.idlab.ugent.be/Ontology/MonitoredPerson/takesMedication	13
+https://saref.etsi.org/core/hasProperty	14
+https://saref.etsi.org/saref4ehaw/hasChronicDisease	15
+http://www.w3.org/1999/02/22-rdf-syntax-ns#type	16
